@@ -4,18 +4,8 @@ const cors = require("cors");
 const app = express();
 const PORT = 4000;
 
-// Add the URL(s) for your frontend application
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://interview-tracker-5s1h.vercel.app",
-];
-
 app.use(bodyParser.json());
-app.use(
-  cors({
-    origin: allowedOrigins,
-  })
-);
+app.use(cors());
 
 let interviews = [];
 

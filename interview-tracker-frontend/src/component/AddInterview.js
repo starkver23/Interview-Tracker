@@ -34,12 +34,6 @@ const AddInterview = () => {
         });
       })
       .catch((err) => {
-        Swal.fire({
-          title: "Error!",
-          text: "There was an issue submitting your data.",
-          icon: "error",
-          confirmButtonText: "Retry",
-        });
         console.error(err);
       });
   };
